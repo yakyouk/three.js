@@ -3111,12 +3111,12 @@
 			const primitives = meshDef.primitives;
 			const pending = [];
 
-			for ( let i = 0, il = primitives.length; i < il; i ++ ) {
+			// for ( let i = 0, il = primitives.length; i < il; i ++ ) {
 
-				const material = primitives[ i ].material === undefined ? createDefaultMaterial( this.cache ) : this.getDependency( 'material', primitives[ i ].material );
-				pending.push( material );
+			// 	const material = primitives[ i ].material === undefined ? createDefaultMaterial( this.cache ) : this.getDependency( 'material', primitives[ i ].material );
+			// 	pending.push( material );
 
-			}
+			// }
 
 			pending.push( parser.loadGeometries( primitives ) );
 			return Promise.all( pending ).then( function ( results ) {

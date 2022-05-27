@@ -2,7 +2,6 @@
   "name": "three",
   "version": "0.139.2",
   "description": "JavaScript 3D library",
-  "type": "module",
   "main": "./build/three.js",
   "module": "./build/three.module.js",
   "exports": {
@@ -12,7 +11,8 @@
     },
     "./examples/fonts/*": "./examples/fonts/*",
     "./examples/jsm/*": "./examples/jsm/*",
-    "./src/*": "./src/*"
+    "./src/*": "./src/*",
+    "./examples/js/loaders/GLTFLoader.js": "./examples/js/loaders/GLTFLoader.js"
   },
   "repository": {
     "type": "git",

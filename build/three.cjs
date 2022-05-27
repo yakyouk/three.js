@@ -17962,7 +17962,10 @@ function WebGLUtils(gl, extensions, capabilities) {
 			} else {
 				return null;
 			}
-		}
+		} // if "p" can't be resolved, assume the user defines a WebGL constant as a string (fallback/workaround for packed RGB formats)
+
+
+		return gl[p] !== undefined ? gl[p] : null;
 	}
 
 	return {
